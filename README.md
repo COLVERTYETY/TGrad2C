@@ -5,8 +5,7 @@
 - [x] Train Simple Neural Network -> done with ```clean_train.ipynb```
 - [x] Export C code -> done with  ```compile.py```
 - [x] Compile witrh gcc -> done in ```clean_train.ipynb```
-- [ ] Validate Compiled model. -> done in ```clean_train.ipynb```
-
-## Current state
-
-The weights generated during export to C do not match the python weights.
+- [x] Validate Compiled model. -> done in ```clean_train.ipynb```
+- [ ] train in fp16
+- [ ] normalize to q15
+- [ ] check that compiled model uses hardware SIMD

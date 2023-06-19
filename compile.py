@@ -86,7 +86,7 @@ cprog += [f"float {name}[{len}];" if name not in bufs_to_save else f"float *{nam
 cprog += list(functions.values())
 
 # the net
-cprog += ["void net() {"] + statements + ["}"]
+cprog += ["void net(void) {"] + statements + ["}"]
 
 cprog += ["float forward(float input){ the_input[0] = input; net(); return the_output[0]; }"]
 
